@@ -1,0 +1,121 @@
+
+.custom-success-message {
+    border-left: 4px solid #28a745;
+    background-color: #e6f4ea;
+    color: #155724;
+    padding: 16px 20px;
+    margin-top: 15px;
+    font-size: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.custom-error-message p {
+    margin: 0;
+    font-weight: 500;
+}
+
+.custom-error-message {
+    border-left: 4px solid #ec0000;
+    background-color: #ffd1d1;
+    color: #ec0000;
+    padding: 16px 20px;
+    margin-top: 15px;
+    font-size: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.custom-success-message p {
+    margin: 0;
+    font-weight: 500;
+}
+
+form.custom-survey-form {
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 8px 16px;
+    background: #f9fafb;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+}
+
+form.custom-survey-form p {
+    margin: 0;
+}
+
+form.custom-survey-form button {
+    background-color: #0a7aff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    color: white;
+    font-size: 1em;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+form.custom-survey-form label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    font-size: .7em;
+    color: #333;
+}
+
+form.custom-survey-form label span {
+    color: #e53935; /* kırmızı yıldız */
+    margin-left: 4px;
+}
+
+form.custom-survey-form input[type="text"],
+form.custom-survey-form input[type="file"],
+form.custom-survey-form input[type="tel"],
+form.custom-survey-form textarea {
+    width: 100%;
+    padding: 5px 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.iti{
+    width: 100%;
+}
+
+form.custom-survey-form input[type="tel"] {
+    padding-left: 50px;
+}
+
+form.custom-survey-form input[type="text"]:focus,
+form.custom-survey-form input[type="tel"]:focus,
+form.custom-survey-form textarea:focus,
+form.custom-survey-form input[type="file"]:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 4px rgba(74, 144, 226, 0.5);
+}
+
+form.custom-survey-form textarea {
+    resize: vertical;
+    min-height: 40px;
+}
+
+form.custom-survey-form input[type="submit"] {
+    background-color: #4a90e2;
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+form.custom-survey-form input[type="submit"]:hover {
+    background-color: #357abd;
+}

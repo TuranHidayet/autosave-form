@@ -1,0 +1,111 @@
+form.custom-survey-form button[type="submit"] {
+    background-color: #0a7aff;
+    padding: 12px 24px;
+    border-radius: 6px;
+    color: white;
+    font-size: 1.1em;
+    outline: none;
+    border: none;
+    width: 500px;
+    display: block;
+    margin: 32px auto 0 auto;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+form.custom-survey-form button[type="submit"]:hover {
+    background-color: #2563eb;
+    box-shadow: 0 4px 16px rgba(37,99,235,0.18);
+}
+form.custom-survey-form,
+.custom-survey-form {
+    max-width: 100%;
+}
+.custom-survey-form {
+    width: 100%;
+    max-width: 700px;
+    margin: 32px auto 0 auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 32px rgba(37,99,235,0.10), 0 1.5px 8px rgba(0,0,0,0.04);
+    padding: 32px 28px 24px 28px;
+    border: 1.5px solid #e3e8ee;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+.custom-survey-fields {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px 20px;
+}
+.custom-survey-fields .form-group {
+    margin-bottom: 0;
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.custom-survey-fields input[type="text"],
+.custom-survey-fields input[type="email"],
+.custom-survey-fields input[type="tel"],
+.custom-survey-fields input[type="number"],
+.custom-survey-fields textarea {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    padding: 14px 14px;
+    border-radius: 8px;
+    border: 1.5px solid #d1d5db;
+    background: #f9fafb;
+    color: #222;
+    height: 48px;
+    transition: border 0.2s, box-shadow 0.2s, background 0.2s;
+    outline: none;
+    margin-top: 4px;
+}
+.custom-survey-fields input[type="text"]:focus,
+.custom-survey-fields input[type="email"]:focus,
+.custom-survey-fields input[type="tel"]:focus,
+.custom-survey-fields input[type="number"]:focus,
+.custom-survey-fields textarea:focus {
+    border-color: #2563eb;
+    background: #fff;
+    box-shadow: 0 0 0 2px #2563eb33;
+}
+.custom-survey-fields input[type="file"] {
+    border: none;
+    background: none;
+    font-size: 1.1rem;
+    margin-top: 8px;
+    color: #2563eb;
+    height: auto;
+}
+.custom-survey-fields input[type="file"]::-webkit-file-upload-button {
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 7px 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.custom-survey-fields input[type="file"]:hover::-webkit-file-upload-button {
+    background: #1e40af;
+}
+.custom-survey-fields ::placeholder {
+    color: #a0aec0;
+    opacity: 1;
+    font-size: 0.98em;
+}
+@media (max-width: 900px) {
+    .custom-survey-fields {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .custom-survey-fields {
+        grid-template-columns: 1fr;
+    }
+}
